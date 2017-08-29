@@ -1,0 +1,127 @@
+// Learning_R
+// 100817
+// from: http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html
+//————————————————————————————
+
+Last login: Mon Aug  7 19:58:46 on ttys001
+Johns-MBP:~ j$ R -v
+WARNING: option '-v' no longer supported
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 2*3
+[1] 6
+> x <- 6*7
+> x
+[1] 42
+> vect1 <- c(2,4,6,8)
+> vect1
+[1] 2 4 6 8
+> vect1[1]
+[1] 2
+> vect1[4]
+[1] 8
+> vect1[5]
+[1] NA
+> myList <- list(name="Fred", wife="Mary"))
+Error: unexpected ')' in "myList <- list(name="Fred", wife="Mary"))"
+> myList <- list(name="Fred", wife="Mary")
+> myList
+$name
+[1] "Fred"
+
+$wife
+[1] "Mary"
+
+> myList <- list(name="Fred", wife="Mary", vect1)
+> myList
+$name
+[1] "Fred"
+
+$wife
+[1] "Mary"
+
+[[3]]
+[1] 2 4 6 8
+
+> myList$wife
+[1] "Mary"
+> attributes(myList)
+$names
+[1] "name" "wife" ""    
+
+> mynames <- c("john", "paul", "george", "ringo", "george")
+> table(mynames)
+mynames
+george   john   paul  ringo 
+     2      1      1      1 
+> mytable <- table(mynames)
+> mytable[[2]]
+[1] 1
+> mytable[["george"]]
+[1] 2
+> log10(100)
+[1] 2
+> help("log10")
+> help.search("deviation")
+> RSiteeSearch("deviation")
+Error in RSiteeSearch("deviation") : 
+  could not find function "RSiteeSearch"
+> RSiteSearch("deviation")
+A search query has been submitted to http://search.r-project.org
+The results page should open in your browser shortly
+> mean(vect1)
+[1] 5
+> myFunction <- function(x) { return(20+(x*x)) }
+> myFunction(10)
+[1] 120
+> myFunction(12.78)
+[1] 183.3284
+
+// QUIT:
+> q()
+Save workspace image? [y/n/c]: n
+
+//———————————
+// LOCAL HELP IN BROWSER:
+help.start(()
+
+// get help on a specific thing(console):
+help(solve)
+
+// alternative syntax(console):
+?(solve)
+
+// ‘help.search’ command aka ‘??’ - allows searching in various DIFFERENT ways 
+
+??solve
+
+// more examples + details of this feature:
+?help.search
+
+
+// run the examples for a particular ‘topic’
+// example(topic)
+
+example(solve)
+
+
+
+//———————————
+
