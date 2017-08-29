@@ -3,10 +3,6 @@
 // from: http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html
 //————————————————————————————
 
-Last login: Mon Aug  7 19:58:46 on ttys001
-Johns-MBP:~ j$ R -v
-WARNING: option '-v' no longer supported
-
 R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin15.6.0 (64-bit)
